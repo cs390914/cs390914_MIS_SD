@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace cs390914_MIS_SD.Models
 {
     public class Patient
     {
+        [Key]
         public int PatientID { get; set; }
         public  string FirstName { get; set; }
         public string LastName { get; set; }
