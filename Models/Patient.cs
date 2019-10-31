@@ -14,6 +14,6 @@ namespace cs390914_MIS_SD.Models
         public string Phone { get; set; }
         public DateTime PatientSince { get; set; }
 
-        public ICollection<Visits> Visits { get; set; }
+        public ICollection<Appointment> Appointments { get; set; }
     }
 }

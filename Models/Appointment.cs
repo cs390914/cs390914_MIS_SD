@@ -5,11 +5,11 @@ using System.Web;
 
 namespace cs390914_MIS_SD.Models
 {
-    public class Visits
+    public class Appointment
     {
-        public int VisitID { get; set; }
+        public int AppointmentID { get; set; }
         public string ReasonForVisit { get; set; }
-        public DateTime VisitDate { get; set; }
+        public DateTime AppointmentDate { get; set; }
 
         public int PatientID { get; set; }
         public virtual Patient Patient { get; set; }
