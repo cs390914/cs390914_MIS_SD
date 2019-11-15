@@ -1,0 +1,42 @@
+﻿@model cs390914_MIS_SD.Models.Doctors
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Doctors</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaOfPractice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaOfPractice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoctorSince)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoctorSince)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoctorPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoctorPhone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DoctorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
